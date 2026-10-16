@@ -8,6 +8,7 @@ public class CarreTest {
 
     @Test
     void testCarreEntier() {
-        assertEquals(25, Calculatrice.carre(5));
+        int nombre = 5;
+        assertEquals(25, Calculatrice.carre(nombre));
     }
 }
