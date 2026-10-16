@@ -3,6 +3,7 @@ package fr.ekod.calcul;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CarreTest {
 
@@ -25,7 +26,8 @@ public class CarreTest {
     @Test
     void limiteInteger() {
         int nombre = Integer.MAX_VALUE;
-        assertEquals( nombre, Calculatrice.carre(nombre));
+        assertThrows(ArithmeticException.class, () -> {
+            Calculatrice.carre(nombre);
+        });
     }
-
 }
