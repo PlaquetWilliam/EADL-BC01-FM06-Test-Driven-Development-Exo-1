@@ -17,4 +17,9 @@ public class CarreTest {
         int nombre = 0;
         assertEquals(0, Calculatrice.carre(nombre));
     }
+    @Test
+    void testCarreNegatif() {
+        int nombre = -6;
+        assertEquals(36, Calculatrice.carre(nombre));
+    }
 }
