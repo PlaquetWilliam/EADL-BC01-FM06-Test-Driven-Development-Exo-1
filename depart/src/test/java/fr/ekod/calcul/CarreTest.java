@@ -11,4 +11,10 @@ public class CarreTest {
         int nombre = 5;
         assertEquals(25, Calculatrice.carre(nombre));
     }
+
+    @Test
+    void testZero() {
+        int nombre = 0;
+        assertEquals(0, Calculatrice.carre(nombre));
+    }
 }
