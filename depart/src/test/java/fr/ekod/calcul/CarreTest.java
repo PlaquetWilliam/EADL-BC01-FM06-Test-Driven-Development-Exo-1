@@ -22,4 +22,10 @@ public class CarreTest {
         int nombre = -6;
         assertEquals(36, Calculatrice.carre(nombre));
     }
+    @Test
+    void limiteInteger() {
+        int nombre = Integer.MAX_VALUE;
+        assertEquals( nombre, Calculatrice.carre(nombre));
+    }
+
 }
